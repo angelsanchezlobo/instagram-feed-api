@@ -1,4 +1,4 @@
-### 📸 Instagram Gallery
+## 📸 Instagram Gallery
 
 This project implements an interactive gallery that displays Instagram posts using the Instagram Graph API. It includes:
 
@@ -9,13 +9,13 @@ This project implements an interactive gallery that displays Instagram posts usi
 
 Perfect for integrating Instagram content elegantly and functionally into any webpage. 🎉  
 
-### 📘 Instagram API Integration Instructions
+## 📘 Instagram API Integration Instructions
 
 This project connects to Instagram's Graph API to fetch and display posts dynamically. Follow these steps to understand and manage the API integration:
 
 ---
 
-#### **1. API Endpoint Configuration**
+### **API Endpoint Configuration**
 
 - **Host URL**:  
   The base URL for fetching media posts from Instagram:  
@@ -38,7 +38,7 @@ This project connects to Instagram's Graph API to fetch and display posts dynami
 
 ---
 
-#### **2. Access Token Management**
+### **Access Token Management**
 
 - **Access Token**:  
   Use a long-lived (60-day) access token. Replace `YOUR_ACCESS_TOKEN` with your valid token:  
@@ -65,7 +65,7 @@ This project connects to Instagram's Graph API to fetch and display posts dynami
 
 ---
 
-#### **3. Fetch Instagram Posts**
+### **Fetch Instagram Posts**
 
 The `fetchInstagramPosts()` function retrieves and displays posts:  
 1. Constructs the API request URL using the token.  
@@ -86,7 +86,7 @@ dataArray.data.forEach((element) => {
 
 ---
 
-#### **4. Popup Interaction**
+### **Popup Interaction**
 
 - Posts can be opened in an interactive popup for detailed viewing:  
   - Videos are displayed with controls.  
@@ -108,7 +108,7 @@ dataArray.data.forEach((element) => {
 
 ---
 
-#### **5. Best Practices**
+### **Best Practices**
 
 - **Token Storage**: Store the token securely in a database or a backend service, not directly in the frontend.  
 - **Caching**: Cache fetched media data to reduce API calls and improve performance.  
