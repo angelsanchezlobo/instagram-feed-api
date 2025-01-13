@@ -1,0 +1,114 @@
+.instagram-gallery-medium {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .instagram-gallery-medium > div {
+    position: relative;
+    margin: 5px;
+    cursor: pointer;
+  }
+
+  .instagram-gallery-medium > div > a > i {
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    margin-right: 5px;
+    color: white;
+    padding: 10px;
+  }
+
+  .instagram-gallery-medium > div > a > p {
+    margin-top: 5px;
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    margin-right: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.618);
+    padding: 10px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .instagram-gallery-medium > div > a {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .instagram-gallery-medium > div > a:hover > img {
+    transform: scale(1.05);
+  }
+
+  .instagram-gallery-medium > div > a > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .instagram-gallery-medium > div > a > a > i {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    margin-right: 5px;
+    color: white;
+    padding: 10px;
+    font-size: 40px;
+  }
+
+  .hidden {
+    display: none !important;
+  }
+
+  #popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  .popup-content {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 50%;
+    max-height: 80%;
+    overflow: auto;
+  }
+
+  .popup-content img,
+  .popup-content video {
+    max-width: 85%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .btn-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #555;
+    cursor: pointer;
+  }
+
